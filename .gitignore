@@ -2,6 +2,7 @@
 .build/
 *.map
 example.js
+ignore.json
 
 # Logs
 logs
