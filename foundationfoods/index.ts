@@ -636,20 +636,38 @@ export async function foundationFoodsSql(tab: string="foundationfoods", opt: Set
  * @returns matches `[{code, name, category, ...}]`
  * @example
  * ```javascript
- * usdaFdc.foundationFoods('raw kale');
  * usdaFdc.foundationFoods('kale');
- * // → [ { code: 'E053',
- * // →     name: 'Kale',
- * // →     category: 'Brassica oleracea',
- * // →     lang: 'A. Ahnaros; B. Anarasa; G. Anenas; H. Ananas; Kan. Ananas; Kash. Punchitipul; Kh. Soh trun; Kon. Anas; Mal. Kayirha chakka; M. Kihom Ananas; O. Sapuri; P. Ananas; Tam. Annasi pazham; Tel. Anasa pandu; U. Ananas.',
+ * usdaFdc.foundationFoods('raw kale');
+ * // → [ { code: '323505',
+ * // →     name: 'Kale, raw',
+ * // →     category: 'Vegetables and Vegetable Products',
+ * // →     protkcal: 2.44,
+ * // →     fatkcal: 8.37,
+ * // →     carbkcal: 3.57,
+ * // →     protfac: 6.25,
+ * // →     ala: 0,
+ * // →     ala_e: 0,
+ * // →     arg: 0,
+ * // →     arg_e: 0,
+ * // →     ash: 1.54,
+ * // →     ash_e: 0.49,
  * // →     ... } ]
  *
- * usdaFdc.foundationFoods('tell me about cow milk.');
- * usdaFdc.foundationFoods('gai ka doodh details.');
- * // → [ { code: 'L002',
- * // →     name: 'Milk, Cow',
- * // →     category: 'Dairy',
- * // →     lang: 'A. Garoor gakhir; B. Doodh (garu); G. Gai nu dhudh; H. Gai ka doodh; Kan. Hasuvina halu; Kash. Doodh; Kh. Dud masi; M. San Sanghom; Mar. Doodh (gay); O. Gai dudha; P. Gaan da doodh; S. Gow kshiram; Tam. Pasumpaal; Tel. Aavu paalu.',
+ * usdaFdc.compositions('ricotta cheese');
+ * usdaFdc.compositions('whole milk ricotta');
+ * // → [ { code: '746766',
+ * // →     name: 'Cheese, ricotta, whole milk',
+ * // →     category: 'Dairy and Egg Products',
+ * // →     protkcal: 4.27,
+ * // →     fatkcal: 8.79,
+ * // →     carbkcal: 3.87,
+ * // →     protfac: 6.38,
+ * // →     ala: 0.325,
+ * // →     ala_e: 0.07,
+ * // →     arg: 0.21,
+ * // →     arg_e: 0.04000000000000001,
+ * // →     ash: 1.36,
+ * // →     ash_e: 0.6100000000000001,
  * // →     ... } ]
  * ```
  */
