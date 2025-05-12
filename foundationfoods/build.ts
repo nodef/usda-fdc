@@ -1,5 +1,5 @@
-import * as path from "jsr:@std/path";
-import * as infoods from "../../infoods/index.ts";
+import * as path    from "jsr:@std/path";
+import * as infoods from "jsr:@nodef/infoods@0.3.8";
 
 
 const FACTORS = new Map([
@@ -22,7 +22,7 @@ async function main() {
   for (const f of data.FoundationFoods) {
     const r: Record<string, string | number> = {};
     r.code = f.fdcId;
-    r.name = f.description.replace(/\s+/g, " ").trim();
+    r.name = f.description.replace(/\"/g, "").replace(/\s+/g, " ").trim();
     r.category = f.foodCategory.description;
     // Process nutrient conversion factors.
     for (const c of f.nutrientConversionFactors || []) {

@@ -1,6 +1,4 @@
 code,name,unit
-"5fthf","5-Formyltetrahydrofolic acid (5-HCOH4","µg"
-"5mthf","5-methyl tetrahydrofolate (5-MTHF)","µg"
 "ala","Alanine","g"
 "arg","Arginine","g"
 "ash","Ash","g"
@@ -130,6 +128,7 @@ code,name,unit
 "fol","Folate, total","µg"
 "folhco10","10-Formyl folic acid (10HCOFA)","µg"
 "frus","Fructose","g"
+"fthf5","5-Formyltetrahydrofolic acid (5-HCOH4","µg"
 "gals","Galactose","g"
 "glu","Glutamic acid","g"
 "glucnb","Beta-glucan","g"
@@ -162,6 +161,7 @@ code,name,unit
 "mk4","Vitamin K (Menaquinone-4)","µg"
 "mn","Manganese, Mn","mg"
 "mo","Molybdenum, Mo","µg"
+"mthf5","5-methyl tetrahydrofolate (5-MTHF)","µg"
 "na","Sodium, Na","mg"
 "ni","Nickel, Ni","µg"
 "nia","Niacin","mg"
