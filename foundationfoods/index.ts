@@ -497,7 +497,7 @@ function parseRow(row: Record<string, string>) {
   for (const k in row) {
     // Name of column is after the last semicolon.
     const l = k.substring(k.lastIndexOf(';')+1).trim();
-    a[l] = TEXTCOLS.has(l)? row[k] : parseFloat(row[k]);
+    a[l] = TEXTCOLS.has(l)? row[k] : parseFloat(row[k] || "0");
   }
   return a;
 }
