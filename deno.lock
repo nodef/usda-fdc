@@ -2,6 +2,7 @@
   "version": "5",
   "specifiers": {
     "jsr:@nodef/extra-sql@0.1.2": "0.1.2",
+    "jsr:@nodef/ifct2017@1.2.1": "1.2.1",
     "jsr:@nodef/infoods@*": "0.3.3",
     "jsr:@nodef/infoods@0.3.6": "0.3.6",
     "jsr:@nodef/infoods@0.3.7": "0.3.7",
@@ -13,6 +14,7 @@
     "jsr:@std/internal@^1.0.6": "1.0.6",
     "jsr:@std/path@*": "1.0.9",
     "jsr:@std/path@1.0.8": "1.0.8",
+    "jsr:@std/path@1.0.9": "1.0.9",
     "jsr:@std/streams@^1.0.8": "1.0.9",
     "jsr:@std/streams@^1.0.9": "1.0.9",
     "npm:lunr@2.3.9": "2.3.9"
@@ -20,6 +22,14 @@
   "jsr": {
     "@nodef/extra-sql@0.1.2": {
       "integrity": "915e7c47145f6f7e64ac04ab1b12c09cc3ef1964e72cd3241f7be423f6d0be8a"
+    },
+    "@nodef/ifct2017@1.2.1": {
+      "integrity": "7f9d347214d322b13d471519cc57f60b04c1b3adbc4cfd23fcf6b9370b33cd42",
+      "dependencies": [
+        "jsr:@nodef/extra-sql",
+        "jsr:@std/csv@1.0.5",
+        "npm:lunr"
+      ]
     },
     "@nodef/infoods@0.3.3": {
       "integrity": "7eaf8de792dd46005dcacbd00f0542b71744e11a62071a7ca96ebce3070884a8",
